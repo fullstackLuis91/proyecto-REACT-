@@ -1,13 +1,13 @@
-import React, { useContext } from 'react'
-import { Button, Form, Input } from 'antd';
-import { UserContext } from '../../context/UserContext/UserState';
+import React, { useContext } from "react"
+import { Button, Form, Input } from "antd";
+import { UserContext } from "../../context/UserContext/UserState";
 
 const Login = () => { 
     const {login} = useContext(UserContext)
 
 
     const onFinish = (values) => {
-    console.log('Success:', values);
+    console.log("Success:", values);
     login(values)
   };
 
@@ -36,7 +36,7 @@ const Login = () => {
       rules={[
         {
           required: true,
-          message: 'Please input your email!',
+          message: 'Please introduce your email!',
         },
       ]}
     >
@@ -49,7 +49,7 @@ const Login = () => {
       rules={[
         {
           required: true,
-          message: 'Please input your password!',
+          message: "Please introduce your password!",
         },
       ]}
     >

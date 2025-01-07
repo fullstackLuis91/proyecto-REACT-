@@ -56,20 +56,21 @@ export const UserProvider = ({ children }) => {
     }
 
     const logout = async () => {
-        const token = localStorage.getItem("token")
+        const token = localStorage.getItem("token");
         const res = await axios.delete("http://localhost:3000/users/logout", {
             headers: {
                 Authorization: token,
             }
-        })
+        });
+    
         dispatch({
             type: "LOGOUT"
-        })
+        });
+    
         if (res.data) {
-            localStorage.clear()
+            localStorage.clear();  
         }
-    }
-
+    };
     return (
         <UserContext.Provider
             value={{

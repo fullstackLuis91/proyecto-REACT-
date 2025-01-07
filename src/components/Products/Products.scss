@@ -1,5 +1,10 @@
 @import "../../colors.scss";
 
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 body{
     background-color : $primaryColor;
 } 

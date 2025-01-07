@@ -1,0 +1,52 @@
+.home-container {
+  text-align: center; /* Centra el contenido dentro de home-container */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Alinea el contenido de manera vertical */
+  justify-content: center;
+  align-items: center; /* Centra los elementos horizontalmente */
+  min-height: 100vh; /* Asegura que el contenido esté centrado verticalmente en toda la pantalla */
+}
+
+.top-image-container {
+  margin-bottom: 30px; /* Espacio entre la imagen superior y el título */
+}
+
+.top-image {
+  width: 100%;
+  height: auto;
+  max-width: 785px; /* Limita el tamaño máximo de la imagen */
+}
+
+.title-container {
+  display: flex;
+  align-items: center; /* Centra las imágenes y el título verticalmente */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Espacio entre las imágenes y el título */
+}
+
+.title {
+  font-size: 4.5rem; /* Aumenta aún más el tamaño del título */
+  color: #333;
+  margin: 0; /* Elimina el margen por defecto del título */
+}
+
+.red-r {
+  color: red;
+}
+
+.image-item-left, .image-item-right {
+  width: 250px; /* Tamaño reducido para las imágenes de Yamaha y la otra */
+}
+
+.moto-image {
+  width: 100%; /* Las imágenes de Honda se ajustan al contenedor */
+  height: auto;
+  margin-top: -20px; /* Mueve la imagen de Honda un poco hacia arriba */
+}
+
+.moto-image-small {
+  width: 110%; /* Las imágenes de Yamaha y la otra se hacen un poco más pequeñas */
+  height: auto;
+  margin-left: -30px; /* Mueve la imagen de Yamaha hacia la izquierda */
+}

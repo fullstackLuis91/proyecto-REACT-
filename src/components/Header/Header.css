@@ -1,0 +1,31 @@
+/* Header.css */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-link {
+    color: rgb(247, 8, 8); /* Rojo */
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.header-link:hover {
+    color: #faf60a; /* Amarillo */
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Estilo adicional para el botón logout */
+.header-link .ant-btn {
+    color: rgb(247, 8, 8) !important; /* Rojo */
+    border: none !important;
+    background: none !important;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.header-link .ant-btn:hover {
+    color: #faf60a !important; /* Amarillo */
+    transform: scale(1.1); /* Efecto de aumento */
+}
